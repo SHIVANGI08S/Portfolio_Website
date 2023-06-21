@@ -1,0 +1,387 @@
+body{
+    background-color: rgb(211, 231, 211);
+    color: darkgreen;
+    
+}
+
+#header{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+.logo{
+    width:140px;
+    border-radius: 50%;
+    margin-left: -30px;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 20px;
+    position:relative;
+
+}
+nav ul li a::after{
+      content: '';
+      width:0;
+      height: 3px;
+      background: rgb(6, 66, 6);
+      position:absolute;
+      left:-10px;
+      bottom :-6px;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    width: 100%;
+}
+.header-text h1 span{
+    color: darkgreen ;
+}
+html{
+    scroll-behavior: smooth;
+}
+              /* about */
+
+#about{
+    padding: 80px 10px;
+    color: darkgreen;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    border-radius: 4%;
+    width: 100%;
+}
+.about-col-2{
+    flex-basis: 65%;
+    align-items: flex-end;
+}
+.about_section{
+    margin-left:50px;
+    font-size: 18px;
+}
+.about_img{
+    margin-top: 100px;
+    margin-left: -50px;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(37, 168, 37);
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+   height: 3px;
+   background: darkgreen;
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+   font-weight: bolder;
+}
+.tab-links.active-link::after{
+width:50%;
+}
+.tab-contents ul li{
+     list-style: none;
+     margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: darkgreen;
+    font-size: 14px;
+}
+
+.tab-contents.active-tab{
+    display:block;
+    margin-left: -42px;
+    margin-top: -30px;
+}
+#ed{
+    margin-left: 160px;
+}
+#education{
+display: inline-block;
+margin-top: -110px;
+margin-left:230px;
+}
+
+              /* services */
+#services{
+padding:30px 0px;
+}
+.subtitle{
+    margin-left: 50px;;
+}
+.service-list{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top: 50px;
+margin-left: 50px;
+}
+.service-list div{
+    background-color: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    margin-right: 50px;
+    transition: background 0.5s , transform 0.5s;
+}
+.service-list div i{
+font-size: 50px;
+margin-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div:hover{
+    background: lightgreen;
+    transform: translateY(-10px);
+}
+/* portfolio */
+
+#portfolio{
+    padding:50px 0;
+}
+#new{
+    margin-left: -60px;
+}
+.worklist{
+    display:grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    display: block;
+    transition: transform(0.5s);
+}
+.layer{
+    width:100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),lightgreen);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    text-align: center;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff00f4;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+/* contact */
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.contact-left h1{
+    margin-left:-45px;
+}
+.contact-left i{
+    font-size: 25px;
+    color: darkgreen;
+    margin-right: 10px;
+    padding: 10px;
+}
+.social-icons{
+    font-size:25px;
+
+}
+.social-icons a{
+    font-size:20px;
+    text-decoration: none;
+    color: darkgreen;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top:40px;
+    margin-left:30px;
+    border-radius: 4px;
+}
+.btn.btn2{
+    background-color: darkgreen;
+    text-decoration: none;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+   
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 50%;
+}
+  
+
+                               /* CSS for small screen*/
+nav .fas{
+display: none;
+}
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top:0;
+        right:-250px;
+        width: 200px;
+        height:100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+
+    }
+    .about-col-1 , .about-col-2{
+     flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-1{
+       font-size: 10px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #ed{
+        margin-left:190px;
+    }
+    #education{
+        font-size: 16px;
+        display: flex;
+        margin-top: -90px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }#new{
+        margin-left: 10px;
+    }
+    #cn{
+        margin-left: 10px;
+    }
+}

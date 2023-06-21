@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel ="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/740d458641.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo"></img>
+        <ul id="sidemenu">
+            <li><a href = "#header">Home</a></li>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#services">Services</a></li>
+            <li><a href = "#portfolio">Portfolio</a></li>
+            <li><a href = "#contact">Contact</a></li>
+            <i class=" fas fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class=" fas fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Shivangi</span> from India</h1>
+        </div>
+</div>
+    </div>
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="about_img" src="about.jpg"></img>
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p class="about_section">I am a coder who loves to code as i feel really happy about learning new design trends . I'm from Varanasi and was born and brought up there only ,I completed my education till class 12th from there and then in order to pursue my graduation i had to leave my city.Right now i'm in 2nd year of my graduation and i'm enjoying this journey and is much more excited to implement what i have learnt in practical world. My hobbies are dancing and reading thriller novels.I love to Travel and wish could travel across the globe !!  
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" id="ed" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full Stack Web development(MERN)</span></li>
+                        <li><span>Data Structures and Algoithms</span></li>
+                        <li><span>Tools: Git, Postman, Mui, VSCode</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2019</span><br>Grade 10th from Raj English School(94.7 percent)</li>
+                        <li><span>2020-2021</span><br>Grade 12th from Raj English School(94.3 percent)</li>
+                        <li><span>2021-Current</span><br>Btech from VIT,Vellore(9.14 Cgpa)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="services">
+        <div class="conatiner">
+            <h1 class="subtitle"> My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Skilled in HTML,CSS and Javascript and is pursuing to learn backend development also.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Data Structures and Algorithms</h2>
+                    <p>My primary language to code DSA is Java and i know C also.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-c"></i>
+                    <h2>Java,C,Python</h2>
+                    <p>I know all the three language but my primary language to code is Java</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle" id ="new">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>the Website i'll update later</p>
+                        <a href ="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Data structre and Algorithm</h3>
+                        <p>I did a course of DSA in Java from Coding Ninja and Currenlty Doing Internship there</p>
+                        <a href ="file:///C:/Users/SHIVANGI/Downloads/CN_Certificate_22c586732b6d5e5a.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+               
+                </div>
+           
+
+    </div>
+<div id ="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle" id ="cn">Contact me</h1>
+            <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i> shivangi.singh08110@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>6386600889</p>
+            <div class="social-icons">
+             <a href="https://www.linkedin.com/in/shivangi-singh-396321232/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+
+        </div>
+    </div>
+    <footer>
+    <div class="copyright">
+        <p>Copyright@ShivangiSingh😊</p>
+    </div>
+</footer>
+</div>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
